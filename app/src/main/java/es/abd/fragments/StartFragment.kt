@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import es.abd.fragments.R
 
-class MenuFragment : Fragment(), View.OnClickListener {
+class StartFragment : Fragment(), View.OnClickListener {
 
     private var mListener: ButtonsFragmentListener? = null
 
@@ -28,12 +28,12 @@ class MenuFragment : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
 
-        val view = inflater.inflate(R.layout.fragment_buttons, container, false)
+        val view = inflater.inflate(R.layout.start_fragment, container, false)
 
-        val btnRed: Button = view.findViewById(R.id.btnRed)
-        val btnGreen: Button = view.findViewById(R.id.btnGreen)
+        //val btnRed: Button = view.findViewById(R.id.btnRed)
+        val btnGreen: Button = view.findViewById(R.id.btnlog)
 
-        btnRed.setOnClickListener(this)
+        //btnRed.setOnClickListener(this)
         btnGreen.setOnClickListener(this)
 
         return view
@@ -41,8 +41,8 @@ class MenuFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when(v.id){
-            R.id.btnRed -> mListener?.onMANButtonClicked()
-            R.id.btnGreen -> mListener?.onWOMANButtonClicked()
+            //R.id.btnRed -> mListener?.onRedButtonClicked()
+            R.id.btnlog -> mListener?.onLogButtonClicked()
         }
     }
 
@@ -53,8 +53,8 @@ class MenuFragment : Fragment(), View.OnClickListener {
 
 
     interface ButtonsFragmentListener{
-        fun onMANButtonClicked()
-        fun onWOMANButtonClicked()
+        fun onRedButtonClicked()
+        fun onLogButtonClicked()
 
     }
 }

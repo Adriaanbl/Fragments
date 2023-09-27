@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import es.abd.fragments.R
 
 
-class GenderFragment : Fragment() {
+class ColorFragment : Fragment() {
     private var backColor: Int = Color.WHITE
 
     override fun onCreate(savedInstanceState: Bundle?) {

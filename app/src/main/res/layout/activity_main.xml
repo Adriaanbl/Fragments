@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/buttonsFragmentContainer"
-        android:name="es.abd.videofragment.MenuFragment"
+        android:name="es.abd.videofragment.StartFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></androidx.fragment.app.FragmentContainerView>
 
